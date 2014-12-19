@@ -1,4 +1,5 @@
 rad_consumer
 ============
 
-App consumer
+App consumer rad services
+

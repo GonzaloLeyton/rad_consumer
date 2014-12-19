@@ -1,0 +1,17 @@
+<html ng-app="UsersApp">
+	<head>
+		<title>Hello AngularJS</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+    	<script type="text/javascript" src="../app/js/angular-resource.js"></script>
+    	<script type="text/javascript" src="../app/app.js"></script>
+	</head>
+
+	<body ng-controller="UserController as user">
+		<button ng-click="user.getData()">Get Data!</button>
+		<div ng-repeat="item in data">
+		    <h3>{{ item.name }}</h3>
+		    <p>{{ item.email }}</p>
+		    <p>{{ item }}</p>
+		</div>
+	</body>
+</html>
